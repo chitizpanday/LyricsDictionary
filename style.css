@@ -1,0 +1,83 @@
+*{
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+
+#maindash{
+   height: 60px;
+   background-color:green;
+   color: white;
+   font-weight: bolder;
+   font-size: 25px;
+   display: flex;
+   justify-content: center;
+   border: 1px solid gray;
+   padding-top: 5px;
+}
+.container{
+   background-color:beige;
+   height:565px;
+   border: 2px solid gray;
+   color: white;
+   font-weight: bolder;
+   font-family: 'Times New Roman', Times, serif;
+}
+
+.col-sm-3{
+   border: 1px solid grey;
+   height: 500px;  
+   background-color: skyblue;
+   
+   /* display: flex;
+   align-content: center;
+   justify-content: center; */
+}
+
+
+
+#searchButton:hover{
+   background-color: rgb(15, 68, 89);
+   color: white;
+}
+
+.col-sm-8{
+   border: 1px solid grey;
+   height: 500px;
+   margin-left: 0;
+   background-color: skyblue;
+   align-self: flex-end;
+  }
+
+
+#lowdash{
+   /* border: 1px solid gray; */
+   height: 250px;
+   justify-content: space-around;
+   margin-bottom: 40px;
+}
+
+#nutrition{
+   background-color:green;
+   height:244px;
+   background-repeat: no-repeat;
+   background-size: cover;
+   overflow: hidden;
+   margin-top: -35px;
+   background-image:url(https://previews.123rf.com/images/kurhan/kurhan1603/kurhan160300595/53530243-fresh-vegetables-and-fruits-over-green-background-healthy-diet-.jpg);
+}
+
+#recipeSearch{
+   width: 150px;
+   height:35px ;
+   margin-bottom: 180px;
+   margin-right: 200px;
+
+}
+
+
+
+
+
+
+
