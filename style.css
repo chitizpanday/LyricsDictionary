@@ -14,6 +14,7 @@
    justify-content: center;
    border: 1px solid gray;
    padding-top: 5px;
+   margin-bottom: 5px;
 }
 .container{
    background-color:beige;
@@ -27,7 +28,10 @@
 .col-sm-3{
    border: 1px solid grey;
    height: 500px;  
-   background-color: skyblue;
+   background-color:rgb(170, 219, 84);
+   margin-left: 5px;
+  
+
    
    /* display: flex;
    align-content: center;
@@ -35,49 +39,78 @@
 }
 
 
-
-#searchButton:hover{
-   background-color: rgb(15, 68, 89);
-   color: white;
-}
-
 .col-sm-8{
    border: 1px solid grey;
-   height: 500px;
-   margin-left: 0;
+   height: 250px;
+   margin-left: 5px;
+   margin-bottom: 500px;
    background-color: skyblue;
-   align-self: flex-end;
   }
 
 
-#lowdash{
-   /* border: 1px solid gray; */
-   height: 250px;
-   justify-content: space-around;
+ #lowdash{
+    height: 250px;
+   
    margin-bottom: 40px;
-}
+} 
 
 #nutrition{
-   background-color:green;
+   color:green;
    height:244px;
    background-repeat: no-repeat;
    background-size: cover;
    overflow: hidden;
    margin-top: -35px;
-   background-image:url(https://previews.123rf.com/images/kurhan/kurhan1603/kurhan160300595/53530243-fresh-vegetables-and-fruits-over-green-background-healthy-diet-.jpg);
+   background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDbBFg4BxLWrF7nkB179VGdswQYQdl2K8cfw&usqp=CAU);
+   
 }
 
 #recipeSearch{
    width: 150px;
    height:35px ;
-   margin-bottom: 180px;
-   margin-right: 200px;
-
+   
+}
+   #recipeItems{
+   width: 190px;
+   height: 30px;
+   border: 2px solid black;
 }
 
+#searchButton{
+   height:25px;
+   margin-bottom: 580px;
+   margin-left: -180px;
+   width: 65px;
+   margin-top: 40px;
+   
+}
 
+#searchButton:hover{
+   background-color: green;
+   color: white;
+}
+#toDo{
+width: 120px;
+border-radius: 10px;
+}
+#displayItem{
+   display: flex;
+   justify-content:flex-end;
+   font-weight: bolder;
+   font-size: 35px;
+}
+.to-dos{
+   margin-top: 25px;
+}
 
-
-
-
-
+#inputField{
+   border: 2px solid black;
+   border-right: 0;
+}
+#addToDo{
+   width: 25px;
+}
+#addToDo:hover{
+   background-color: green;
+   color: white;
+}

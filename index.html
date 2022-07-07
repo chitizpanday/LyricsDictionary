@@ -10,23 +10,27 @@
   <body>
     <div class="container">
       <div class="row">
-        <div class="col-12" id="maindash"> Live Well</div> 
+        <div class="col-12" id="maindash"> FOOD PURSUIT</div> 
       </div>
 
       <div class="row" id="dash2">
         <div class="col-sm-3">
-         <h4>Stay Organized</h4>
-          <h4>To Do List:</h4>
-          <input type="text" id="toDo"></input> <br></br>
-          <button id="searchButton" onclick="getInfo()"> Add </button> <br></br>
+          <h5> My Next Meal Grocery List</h5>
+          <input type="text" id="inputField"><button id="addToDo" onclick="addGrocery()">+</button>
+          <div class="to-dos" id="toDoContainer"></div>
+          <!-- <input type="text" id="toDo"></input> <br></br>
+          <button id="addButton" onclick="getInfo()"> Add </button>  -->
           <div>
             <ul id="cities"></ul>
           </div>
         </div>
         <div class="col-sm-8">
           <div class="row" id="lowdash">
-            <h4> Search for a Recipe</h4>
-            <input type="text" id="recipeSearch"></input>
+            <h5 id="displayItem">food</h5>
+            <h4> Search for a Recipe</h4> 
+            <input type="text" id="recipeItems"></input>
+            <button id="searchButton" onclick="searchRecipe()">Search</button>  
+            <!-- <h5 id="displayItem">food</h5> -->
           </div>
           <div class="row">
             <div class="col-sm-12" id="nutrition">
@@ -41,6 +45,6 @@
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.3/moment.min.js" ></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-    <script src="./code.js"></script>  
+    <script src="./script.js"></script>  
   </body>
 </html>
