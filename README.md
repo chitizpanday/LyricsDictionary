@@ -1,2 +1,3 @@
-# LyricsDictionary
-project_1
+# Food Pursuit 
+Project One
+
