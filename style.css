@@ -6,15 +6,15 @@
 
 #maindash{
    height: 60px;
-   background-color:green;
+   background-color:rgb(170, 219, 84);
    color: white;
    font-weight: bolder;
    font-size: 25px;
    display: flex;
    justify-content: center;
-   border: 1px solid gray;
    padding-top: 5px;
-   margin-bottom: 5px;
+   margin: 2px;
+   
 }
 .container{
    background-color:beige;
@@ -25,11 +25,12 @@
    font-family: 'Times New Roman', Times, serif;
 }
 
-.col-sm-3{
+.col-sm-2{
    border: 1px solid grey;
-   height: 500px;  
+   height: 492px;  
    background-color:rgb(170, 219, 84);
-   margin-left: 5px;
+   margin-left: 2px;
+   
   
 
    
@@ -39,28 +40,31 @@
 }
 
 
-.col-sm-8{
+.col-sm-9{
    border: 1px solid grey;
-   height: 250px;
-   margin-left: 5px;
-   margin-bottom: 500px;
-   background-color: skyblue;
+   height: 388px;
+   margin: 2px;
+   /* margin-bottom: 500px; */
+   background-color: rgb(33, 93, 33);
   }
 
 
  #lowdash{
-    height: 250px;
-   
+    height: 350px;
    margin-bottom: 40px;
+   display: flex;
+   margin-top: 10px;
 } 
 
 #nutrition{
-   color:green;
-   height:244px;
-   background-repeat: no-repeat;
+   background-color:whitesmoke;
+   color:rgb(33, 93, 33);
+   height:100px;
+   margin-top: -10px;
+   /* background-repeat: no-repeat;
    background-size: cover;
    overflow: hidden;
-   margin-top: -35px;
+   margin-top: -35px; */
    background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDbBFg4BxLWrF7nkB179VGdswQYQdl2K8cfw&usqp=CAU);
    
 }
@@ -71,22 +75,21 @@
    
 }
    #recipeItems{
-   width: 190px;
+   width: 150px;
    height: 30px;
    border: 2px solid black;
+   border-right: 0;
+   margin-left: 10px;
 }
 
 #searchButton{
-   height:25px;
+   height:30px;
    margin-bottom: 580px;
-   margin-left: -180px;
-   width: 65px;
-   margin-top: 40px;
-   
+   width: 35px;
 }
 
 #searchButton:hover{
-   background-color: green;
+   background-color:rgb(33, 93, 33);
    color: white;
 }
 #toDo{
@@ -106,11 +109,37 @@ border-radius: 10px;
 #inputField{
    border: 2px solid black;
    border-right: 0;
+   width:130px;
 }
 #addToDo{
-   width: 25px;
+   width: 30px;
 }
 #addToDo:hover{
-   background-color: green;
+   background-color: rgb(33, 93, 33);
    color: white;
 }
+
+.paragraph-styling{
+   cursor: pointer;
+}
+
+.display{
+   flex: 20%;
+  padding-top: 50px;
+  font-weight: lighter;
+  font-size: 14px;
+ 
+}
+
+#picture{
+   height:150px;
+   width: 215px;
+   border: 1px solid white;
+}
+.row{
+   display: flex;
+}
+
+/* .recipeTabs{
+   display: flex;
+} */

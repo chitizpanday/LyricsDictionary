@@ -3,18 +3,18 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>Food Pursuit</title>
     <link rel="stylesheet" href="./style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
   </head>
   <body>
     <div class="container">
       <div class="row">
-        <div class="col-12" id="maindash"> FOOD PURSUIT</div> 
+        <div class="col-12" id="maindash"> FOOD  PURSUIT</div> 
       </div>
 
       <div class="row" id="dash2">
-        <div class="col-sm-3">
+        <div class="col-sm-2">
           <h5> My Next Meal Grocery List</h5>
           <input type="text" id="inputField"><button id="addToDo" onclick="addGrocery()">+</button>
           <div class="to-dos" id="toDoContainer"></div>
@@ -24,13 +24,40 @@
             <ul id="cities"></ul>
           </div>
         </div>
-        <div class="col-sm-8">
+        <div class="col-sm-9" style="width:82%">
           <div class="row" id="lowdash">
-            <h5 id="displayItem">food</h5>
+            <h6 id="displayItem"></h6>
             <h4> Search for a Recipe</h4> 
-            <input type="text" id="recipeItems"></input>
-            <button id="searchButton" onclick="searchRecipe()">Search</button>  
-            <!-- <h5 id="displayItem">food</h5> -->
+            <input type="text" id="recipeItems"><button id="searchButton" onclick="searchRecipe()">&#x1F50D;</button>  
+            <div class="display" >
+              <img id="picture" src="https://img.onmanorama.com/content/dam/mm/en/food/features/images/2021/10/17/pizza.jpg" alt="food picture">
+              <div class="recipeTabs">
+                <div>Recipe</div>
+                <div>View Recipe</div>
+                <div>calorie: 300</div>
+              </div>
+            </div>
+            <div class="display" >
+              <img id="picture" src="https://img.onmanorama.com/content/dam/mm/en/food/features/images/2021/10/17/pizza.jpg" alt="food picture">
+              <div class="recipeTabs">
+                <div>Recipe</div>
+                <div>View Recipe</div>
+                <div>calorie: 300</div>
+              </div>
+            </div>
+            
+            <div class="display" >
+              <img id="picture" src="https://img.onmanorama.com/content/dam/mm/en/food/features/images/2021/10/17/pizza.jpg" alt="food picture">
+              <div class="recipeTabs">
+                <div>Recipe</div>
+                <div>View Recipe</div>
+                <div>calorie: 300</div>
+              </div>
+            </div>
+            <!-- <h4> Search for a Recipe</h4> 
+            <input type="text" id="recipeItems"><button id="searchButton" onclick="searchRecipe()">&#x1F50D;</button>   -->
+            
+            
           </div>
           <div class="row">
             <div class="col-sm-12" id="nutrition">
