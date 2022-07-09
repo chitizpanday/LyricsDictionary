@@ -7,20 +7,19 @@ const searchHistory = document.querySelector(".search-history-list");
 //localStorage.setItem("ingredientSearch");
 
 //handling click on search button
-let ingredientSearch = document.querySelector("#search-input").value.trim();
 
-localStorage.setItem("recipeSearch", ingredientSearch);
+// localStorage.setItem("recipeSearch", ingredientSearch);
 
-if (localStorage.getItem("recipeSearch") != null) {
-  var historyTmp = localStorage.getItem("recipeSearch");
-  var oldhistoryarray = historyTmp.split("|");
+// if (localStorage.getItem("recipeSearch") != null) {
+//   var historyTmp = localStorage.getItem("recipeSearch");
+//   var oldhistoryarray = historyTmp.split("|");
 
-  for (var i = 0; i < oldhistoryarray.length; i++) {
-    searchHistory.innerHTML = "<p>" + oldhistoryarray[i] + "</p>";
-  }
-}
+//   for (var i = 0; i < oldhistoryarray.length; i++) {
+//     searchHistory.innerHTML = "<p>" + oldhistoryarray[i] + "</p>";
+//   }
+// }
 
-searchButton.addEventListener("click", getListofMeals);
+searchButton.addEventListener("click", getListofMeals(searchedIngredient));
 
 mealList.addEventListener("click", getRecipe);
 
@@ -31,6 +30,8 @@ recipeCloseButton.addEventListener("click", () =>
 //function to get the list of meals
 
 function getListofMeals() {
+  let ingredientSearch = document.querySelector("#search-input").value.trim();
+
   fetch(
     "https://www.themealdb.com/api/json/v1/1/filter.php?i=" + ingredientSearch
   )
