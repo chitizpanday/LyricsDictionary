@@ -2,19 +2,20 @@
 var appId='cdc87a4e';
 var appKey = '8a7be31efd6be7e303b00d3e963e0c18';
 var key = 'pizza'
-var baseURL = `https://api.edamam.com/search?q=${key}&app_id=${appId}&app_key=${appKey}&to=3`;
+var baseURL = `https://api.edamam.com/search?q=${key}&app_id=${appId}&app_key=${appKey}&to=15`;
 var displaySearchResults=document.getElementById("displayPictures")
+
+
 //applying Fetch method to access data from the API
 
 async function fetchData(userInput){
   key = userInput;
-  baseURL = `https://api.edamam.com/search?q=${key}&app_id=${appId}&app_key=${appKey}&to=3`;
+  baseURL = `https://api.edamam.com/search?q=${key}&app_id=${appId}&app_key=${appKey}&to=15`;
 fetch(baseURL)
 .then((response) => {
   return response.json();
 })
 .then((data) => {
-  
   var generatedHTML = '';
    
      data.hits.map(function(result) {
@@ -29,25 +30,32 @@ fetch(baseURL)
                   <div><a id="viewRecipe" href="${result.recipe.url}" target=_"blank"> View Recipe</a></div>
                   <div>Calories:${result.recipe.calories.toFixed(2)}</div>
                 </div>`;
-
-               
-                
-   
                 displaySearchResults.innerHTML=  generatedHTML;
   });
   
   });
 }
 
-//gathering API Credentials for food Search from Newyork Times
+//gathering API Credentials from the Newyork Times
 var applicationId='6f3d81b6-bfad-49ed-b46e-b805cc54da80';
 var applicationKey = 'QYRw2zwbEnHj7w1ydbnka8cYblkU2I10';
-URL = `https://api.nytimes.com/svc/topstories/v2/food.json?api-key=${applicationKey}`
+NewsURL = `https://api.nytimes.com/svc/topstories/v2/food.json?api-key=${applicationKey}`
 
 
+//applying Fetch method to access data from the NewYork Times API
 
-
+//async function fetchNewsData(news){
+  NewsURL = `https://api.nytimes.com/svc/topstories/v2/food.json?api-key=QYRw2zwbEnHj7w1ydbnka8cYblkU2I10`
+fetch(NewsURL)
+.then ((response)=>{
+return response.json();
   
+})
+.then ((Newsdata)=>{
+  console.log(Newsdata);
+})
+// }
+
  
 
 
@@ -58,6 +66,7 @@ document.getElementById("displayItem").innerHTML= recipeSearch.value;
 fetchData(recipeSearch.value);
 
 }
+
 
 //populate and store the history of the grocery list
 var inputField = document.getElementById("inputField");
@@ -79,6 +88,8 @@ addToDoButton.addEventListener("click", function () {
   });
 });
 
+
+
 //save the history of the grocery list in the local storage
 if (localStorage.getItem("inputField") !== null) {
   document.getElementById("inputField").innerHTML = JSON.parse(
@@ -95,3 +106,24 @@ localStorage.setItem("inputField", jsonTODO);
 }
 
 
+
+
+//Displaying Date and Time on the Navbar
+
+function currentTime() {
+  var date = new Date();
+  var currTime = date.toLocaleTimeString();
+  document.getElementById("time").innerHTML = currTime;
+}
+setInterval(currentTime, 1000);
+
+
+function currdate() {
+  var today = new Date();
+  var month = today.getMonth() + 1;
+  var year = today.getFullYear();
+  var date = today.getDate();
+  var currentDate = `${month}-${date}-${year}`;
+  document.getElementById("date").innerHTML = currentDate;
+}
+currdate()
