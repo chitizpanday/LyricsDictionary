@@ -17,9 +17,11 @@ A website that provides the users the ability to search for a meal and its conte
 none
 
 ## Website
+
 https://chitizpanday.github.io/foodPursuit/
 
 ## Github
+
 https://github.com/chitizpanday/foodPursuit
 
 ## Contribution
@@ -27,3 +29,5 @@ https://github.com/chitizpanday/foodPursuit
 Made by Chitiz Pandey, Damian De La Garza, Felix Sanchez, and Sumit Ojha.
 
 ## Screenshot
+
+![](Images/screenshot-1.jpg)
