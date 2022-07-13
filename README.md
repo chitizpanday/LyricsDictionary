@@ -2,7 +2,7 @@
 
 ## Purpose
 
-A website that provides the users the ability to search for a food and news about the food.
+A website that provides the users the ability to search for a meal and its content along with the news about the food industry.
 
 ## Built With
 
