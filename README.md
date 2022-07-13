@@ -16,7 +16,7 @@ A website that provides the users the ability to search for a meal and its conte
 none
 
 ## Website
-
+https://chitizpanday.github.io/foodPursuit/
 
 ## Contribution
 
