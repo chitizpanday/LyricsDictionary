@@ -10,6 +10,7 @@ A website that provides the users the ability to search for a meal and its conte
 - CSS
 - JavaScript
 - jQuery
+- Bulma
 
 ## Prerequisites
 
@@ -20,6 +21,6 @@ https://chitizpanday.github.io/foodPursuit/
 
 ## Contribution
 
-Made with ❤️ by Chitiz Pandey, Damian De La Garza, Felix Sanchez, and Sumit Ojha.
+Made by Chitiz Pandey, Damian De La Garza, Felix Sanchez, and Sumit Ojha.
 
 ## Screenshot
