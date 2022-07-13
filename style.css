@@ -60,9 +60,9 @@
    margin-left: 194px;
    margin-top: -212px;
    overflow-y:auto;
+   overflow-x: auto;
    background-repeat: no-repeat;
    background-size: cover;
-   overflow: hidden; 
    background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTagj26gU3NY9hHPhK6vpuN8xwa8XtBRC_ExQ&usqp=CAU); 
 }
 
@@ -95,6 +95,11 @@
 #searchButton:hover{
    background-color:rgb(33, 93, 33);
    color: white;
+}
+
+h4{
+   font-weight: bolder;
+   font-size: 35px;
 }
 #toDo{
 width: 120px;

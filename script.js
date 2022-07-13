@@ -48,24 +48,21 @@ async function fetchNewsData(){
   newsURL = `https://api.nytimes.com/svc/topstories/v2/food.json?api-key=QYRw2zwbEnHj7w1ydbnka8cYblkU2I10`
 fetch(newsURL)
 .then ((response)=>{
-return response.json();
-  
+  return response.json();
 })
 .then ((newsData)=>{
   console.log(newsData);
-  GENERATEDHTML='';
-  newsData.result(function(results){
-    GENERATEDHTML+=
-    `<div id="newsHeadlines">
-      <div>${results.abstract}</div>
-      <div>${results.byline}</div>
-      <div>${results.created_Date}</div>
-    </div>`
-
-    document.getElementById("newsHeadlines").innerHTML=newsData.value
-
+  let generatedHtml = '';
+  newsData.results.map(x => {
+    generatedHtml +=
+    `<div>
+      <div>${x.abstract}</div>
+      <div>${x.byline}</div>
+      <div>${x.created_date}</div>
+      <div>${x.multimedia[1,2]}</div>
+    </div>`;
   })
-  
+  document.getElementById("newsHeadlines").innerHTML=generatedHtml;  
 })
  }
  fetchNewsData()
