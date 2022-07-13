@@ -19,6 +19,9 @@ none
 ## Website
 https://chitizpanday.github.io/foodPursuit/
 
+## Github
+https://github.com/chitizpanday/foodPursuit
+
 ## Contribution
 
 Made by Chitiz Pandey, Damian De La Garza, Felix Sanchez, and Sumit Ojha.
