@@ -20,6 +20,6 @@ none
 
 ## Contribution
 
-Made with ❤️ by Chitiz Pandey, Damian De La garza, Felix Sanchez, and Sumit Ojha.
+Made with ❤️ by Chitiz Pandey, Damian De La Garza, Felix Sanchez, and Sumit Ojha.
 
 ## Screenshot
