@@ -44,7 +44,7 @@
    border: 1px solid grey;
    height: 280px;
    margin: 2px;
-   /* margin-bottom: 500px; */
+    margin-right:0px;
    background-color: rgb(33, 93, 33);
    overflow-y:auto;
    display: flex;
@@ -57,36 +57,39 @@
    color:rgb(33, 93, 33);
    height:210px;
    border: 1px solid gray;
-   margin-left: 193px;
+   margin-left: 194px;
    margin-top: -212px;
-  
-
-    /* background-repeat: no-repeat;
+   overflow-y:auto;
+   background-repeat: no-repeat;
    background-size: cover;
-   overflow: hidden; */
-   /* background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDbBFg4BxLWrF7nkB179VGdswQYQdl2K8cfw&usqp=CAU); */
+   overflow: hidden; 
+   background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTagj26gU3NY9hHPhK6vpuN8xwa8XtBRC_ExQ&usqp=CAU); 
 }
 
 .col-sm-12{
    height: 150px;
    margin-top: 200px;
+   
 }
 #recipeSearch{
    width: 150px;
    height:35px ;
    
 }
+
    #recipeItems{
    width: 150px;
    height: 30px;
    border: 2px solid black;
    border-right: 0;
    margin-left: 10px;
+   margin-top: 5px;
 }
 
 #searchButton{
    height:30px;
    width: 35px;
+   margin-top: 5px;
 }
 
 #searchButton:hover{
@@ -99,8 +102,8 @@ border-radius: 10px;
 }
 #displayItem{
    display: flex;
-   justify-content: center;
    font-size: 35px;
+   margin-left: 225px;
 }
 .to-dos{
    margin-top: 25px;
@@ -124,25 +127,48 @@ border-radius: 10px;
 }
 
 .display{
-  padding-top: 50px;
+  /* padding-top: 20px; */
   font-weight: lighter;
   font-size: 14px;
-  display:grid;
-  flex-direction: row;
+   display:flex;
+   flex-direction:row;
+   justify-content: space-evenly;
 }
 
+#viewRecipe{
+   text-decoration: none;
+   background-color:rgb(170, 219, 84);
+   color: white;
+}
+
+#viewRecipe:hover{
+   background-color: black;
+   color: white;
+}
 
 #picture{
-   height:75px;
-   width: 125px;
+   height:110px;
+   width: 250px;
    border: 2px solid white;
+   margin-top: 20px;
+   margin-right: 50px;
+   justify-content:flex-start;
+   justify-content: space-evenly;
+   border-radius: 5px;
+}
+.searchAndDisplayTabs{
    display: flex;
    
 }
-#displayPictures{
-   display: flex;
-   flex-direction: row;
+.recipeTabs{
+   display: grid;
+   margin-top: 150px;
+   margin-left: -100px;
 }
+/* #displayPictures{
+   display: grid;
+   flex-direction: column;
+} */
 
 #welcome{
    font-size: 20px;
@@ -169,4 +195,10 @@ border-radius: 10px;
    height: 25px;
    width: 35px;
    border-radius: 8px;
+}
+
+
+
+@media(max-width:786px){
+
 }

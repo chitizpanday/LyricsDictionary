@@ -28,7 +28,7 @@ fetch(baseURL)
                 <div class="recipeTabs">
                   <div>${result.recipe.label}"</div>
                   <div><a id="viewRecipe" href="${result.recipe.url}" target=_"blank"> View Recipe</a></div>
-                  <div>Calories:${result.recipe.calories.toFixed(2)}</div>
+                  <div>Calories:  ${result.recipe.calories.toFixed(2)}</div>
                 </div>`;
                 displaySearchResults.innerHTML=  generatedHTML;
   });
@@ -39,23 +39,36 @@ fetch(baseURL)
 //gathering API Credentials from the Newyork Times
 var applicationId='6f3d81b6-bfad-49ed-b46e-b805cc54da80';
 var applicationKey = 'QYRw2zwbEnHj7w1ydbnka8cYblkU2I10';
-NewsURL = `https://api.nytimes.com/svc/topstories/v2/food.json?api-key=${applicationKey}`
+newsURL = `https://api.nytimes.com/svc/topstories/v2/food.json?api-key=${applicationKey}`
 
 
 //applying Fetch method to access data from the NewYork Times API
 
-//async function fetchNewsData(news){
-  NewsURL = `https://api.nytimes.com/svc/topstories/v2/food.json?api-key=QYRw2zwbEnHj7w1ydbnka8cYblkU2I10`
-fetch(NewsURL)
+async function fetchNewsData(){
+  newsURL = `https://api.nytimes.com/svc/topstories/v2/food.json?api-key=QYRw2zwbEnHj7w1ydbnka8cYblkU2I10`
+fetch(newsURL)
 .then ((response)=>{
 return response.json();
   
 })
-.then ((Newsdata)=>{
-  console.log(Newsdata);
-})
-// }
+.then ((newsData)=>{
+  console.log(newsData);
+  GENERATEDHTML='';
+  newsData.result(function(results){
+    GENERATEDHTML+=
+    `<div id="newsHeadlines">
+      <div>${results.abstract}</div>
+      <div>${results.byline}</div>
+      <div>${results.created_Date}</div>
+    </div>`
 
+    document.getElementById("newsHeadlines").innerHTML=newsData.value
+
+  })
+  
+})
+ }
+ fetchNewsData()
  
 
 
