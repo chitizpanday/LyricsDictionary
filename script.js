@@ -2,7 +2,7 @@
 var appId='cdc87a4e';
 var appKey = '8a7be31efd6be7e303b00d3e963e0c18';
 var key = 'pizza'
-var baseURL = `https://api.edamam.com/search?q=${key}&app_id=${appId}&app_key=${appKey}&to=15`;
+var baseURL = `https://api.edamam.com/search?q=${key}&app_id=${appId}&app_key=${appKey}&to=25`;
 var displaySearchResults=document.getElementById("displayPictures")
 
 
@@ -10,7 +10,7 @@ var displaySearchResults=document.getElementById("displayPictures")
 
 async function fetchData(userInput){
   key = userInput;
-  baseURL = `https://api.edamam.com/search?q=${key}&app_id=${appId}&app_key=${appKey}&to=15`;
+  baseURL = `https://api.edamam.com/search?q=${key}&app_id=${appId}&app_key=${appKey}&to=25`;
 fetch(baseURL)
 .then((response) => {
   return response.json();
@@ -21,7 +21,7 @@ fetch(baseURL)
      data.hits.map(function(result) {
      generatedHTML+=
     //  console.log(result);
-    //  generatedHTML+=
+    
   
                  `<div id = "DISPLAY" class="display" >
                 <img id="picture" src="${result.recipe.image}">
@@ -59,7 +59,7 @@ fetch(newsURL)
       <div>${x.abstract}</div>
       <div>${x.byline}</div>
       <div>${x.created_date}</div>
-      <div>${x.multimedia[1,2]}</div>
+      <div>${x.url}</div> <br/><br/>
     </div>`;
   })
   document.getElementById("newsHeadlines").innerHTML=generatedHtml;  

@@ -108,7 +108,8 @@ border-radius: 10px;
 #displayItem{
    display: flex;
    font-size: 35px;
-   margin-left: 225px;
+   margin-left: 200px;
+
 }
 .to-dos{
    margin-top: 25px;
@@ -138,6 +139,7 @@ border-radius: 10px;
    display:flex;
    flex-direction:row;
    justify-content: space-evenly;
+   padding-left: 40px;
 }
 
 #viewRecipe{
@@ -155,9 +157,9 @@ border-radius: 10px;
    height:110px;
    width: 250px;
    border: 2px solid white;
-   margin-top: 20px;
-   margin-right: 50px;
-   justify-content:flex-start;
+   margin-top: 10px;
+   /* margin-right: 50px; */
+ 
    justify-content: space-evenly;
    border-radius: 5px;
 }
@@ -167,8 +169,9 @@ border-radius: 10px;
 }
 .recipeTabs{
    display: grid;
-   margin-top: 150px;
-   margin-left: -100px;
+   margin-top: 130px;
+   margin-left: -120px;
+   padding-right: 60px;
 }
 /* #displayPictures{
    display: grid;
@@ -202,6 +205,13 @@ border-radius: 10px;
    border-radius: 8px;
 }
 
+#multimedia{
+background-color: white;
+color: black;
+}
+#multimedia:hover{
+   cursor: pointer;
+}
 
 
 @media(max-width:786px){
